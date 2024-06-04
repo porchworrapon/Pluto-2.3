@@ -100,17 +100,21 @@ className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-
 {/* lower Navbar */}
 <div className='flex justify-center'>
 <ul className='sm:flex hidden item-center gap-4 '>
+  
+
     {
         Menu.map((data) => (
 <li key={data.id}>
     <a href={data.link}
-    className='inline-block px-3 hover:text-primary duration-200 py-2'
+    className=' inline-block px-3 hover:text-primary duration-200 py-2'
     >{data.name}
     </a>
 </li>
+
+
         ))}
-{/* simple dropdown menu */}
-<li className='group relative cursor-pointer'>
+  {/* simple dropdown menu */}
+  <li className='group relative cursor-pointer'>
 <a href="#" className='flex items-center gap-[2px] py-2 px-3 '
 >
     สินค้าเฉพาะคุณ
@@ -119,6 +123,7 @@ className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-
 className = " translate-all duration-200 group-hover:rotate-180"/>
     </span>
 </a>
+  
 <div className='absolute z-[9999] hidden group-hover:block w-[200px] rounded-md
 bg-white p-2 text-black shadow-md '>
     <ul>
