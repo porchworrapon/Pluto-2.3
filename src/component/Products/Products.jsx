@@ -72,11 +72,19 @@ const Products = () => {
     place-item-center gap-5 '>
 {/* card section */}
 {
-    ProductsData.map((data,index) => (
-<div key = {index}>
+    ProductsData.map((data) => (
+<div key = {data.id}
+className="space-y-3">
 <img src={data.Image} alt="" 
-className="h-[220px] w-[220px]"
-/>
+className="h-[350px] w-[350px] object-cover rounded-md "/>
+<div>
+    <h3 className=" font-semibold ">{data.Title}</h3>
+    <p className="text-sm text-gray-600">{data.color}</p>
+<div className="flex items-center gap-1">
+    <FaStar className="text-yellow-400"/>
+    <span>{data.Rating}</span>
+</div>
+</div>
 </div>
     ) )
 }
