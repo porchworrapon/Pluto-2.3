@@ -74,7 +74,9 @@ const Products = () => {
 {
     ProductsData.map((data,index) => (
 <div key = {index}>
-<img src={data.Image} alt="" />
+<img src={data.Image} alt="" 
+className="h-[220px] w-[220px]"
+/>
 </div>
     ) )
 }
