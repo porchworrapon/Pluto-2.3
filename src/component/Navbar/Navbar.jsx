@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import Logo from '../../assets/Logo.png';
 import { LuSearchCheck } from "react-icons/lu";
 import { FaCartShopping } from 'react-icons/fa6';
