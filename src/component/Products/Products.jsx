@@ -1,4 +1,4 @@
-// import { data } from 'autoprefixer'
+ //import { data } from 'autoprefixer'
 //import React from 'react'
 import Image1 from "../../assets/Iphone/img1.jpg";
 import Image2 from "../../assets/Iphone/img2.jpg";
