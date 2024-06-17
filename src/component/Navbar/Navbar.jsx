@@ -42,6 +42,7 @@ const Dropdownlink = [
         id:2,
         name:"สินค้าขายดี",
         link:"/#",
+
     },
     {
         id:3,
@@ -49,7 +50,6 @@ const Dropdownlink = [
         link:"/#",
     },
 ]
-
 const Navbar = () => {
   return (
     <div className='shadow-md bg-white  dark:text-black duration-200 relative z-40'>
