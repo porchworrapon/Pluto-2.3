@@ -89,9 +89,9 @@ className="h-[350px] w-[350px] object-cover rounded-md "/>
 </div>
 </div>
 </div>
-    ) )
-}
+    ) )}
     </div>
+    
 </div>
         </div>
     </div>

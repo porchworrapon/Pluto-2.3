@@ -2,10 +2,10 @@
 //import Products from "../Products/Products"
 import Image1 from "../../assets/samsung/Image1.jpg"
 import Image2 from "../../assets/samsung/Image2.webp"
-import Image3 from "../../assets/samsung/Image3.webp"
-import Image4 from "../../assets/samsung/Image4.jpg"
-import Image5 from "../../assets/samsung/Image5.png"
-//import { FaStar } from "react-icons/fa"
+import Image3 from "../../assets/samsung/image3.webp"
+import Image4 from "../../assets/samsung/image4.jpg"
+import Image5 from "../../assets/samsung/image5.png"
+import { FaStar } from "react-icons/fa"
 const ProductsData = [
     {
         id : 1,
@@ -60,18 +60,42 @@ className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md: gap-5 place
 {
     ProductsData.map((data,index) => (
     <div key = {index}
+    data-aos='zoom-in'
+    data-aos-delay={data.aosDelay}
     className="rounded-2xl bg-white dark:bg-gray-800
      hover:bg-black/80 dark:hover:bg-primary
     hover:text-white relative shadow-xl duration-300 group max-w-[300px] "
     >
       {/* image section */}
 <div>
-    <img src={data.Image} alt="" 
-   /*  className="max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 
-    duration-300 drop-shadow-md" */
+    <img src={data.Image} alt=""  
+    className="max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 
+    duration-300 drop-shadow-md"
     />
 </div>
       {/* details section */}
+    <div className="p-5 text-center">
+{/* star rating */}
+<div className="w-full flex items-center justify-center gap-1">
+  <FaStar className="text-yellow-400" />
+  <FaStar className="text-yellow-400" />
+  <FaStar className="text-yellow-400"  />
+  <FaStar className="text-yellow-400"  />
+  <FaStar className="text-yellow-400"  />
+</div>
+<h1 className="text-xl font-bold">{data.Title}</h1>
+<p
+className="text-sm text-gray-500 group-hover:text-white duration-300 text-sm 
+line-clamp-2 ">
+  {data.Description}</p>
+  <button
+  className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4  rounded-full
+   mt-4 group-hover:bg-white group-hover:text-primary"
+  // onClick={handleOrderPopup}
+   >
+    Order Now
+  </button>
+    </div>
  </div>
     ))}
 </div>

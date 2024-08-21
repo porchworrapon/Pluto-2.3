@@ -5,6 +5,8 @@ import Products from './component/Products/Products';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import TopProduct from './component/TopProduct/TopProduct';
+import Banner from './component/Banner/Banner';
+import Subscribe from './component/Subscribe/Subscribe';
 
 const App = () => {
   
@@ -20,10 +22,14 @@ const App = () => {
 
   return (
     <div>
+    
       <Navbar />
       <Hero />
       <Products />
-<TopProduct/>
+      <TopProduct />
+      <Banner />
+      <Subscribe />
+
     </div>
   );
 };
