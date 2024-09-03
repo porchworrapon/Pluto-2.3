@@ -91,7 +91,10 @@ className="h-[350px] w-[350px] object-cover rounded-md "/>
 </div>
     ) )}
     </div>
-    
+   {/*   view all button */}
+<div className="flex justify-center ">
+    <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md"> ดูสินค้าทั้งหมด </button>
+</div>
 </div>
         </div>
     </div>
